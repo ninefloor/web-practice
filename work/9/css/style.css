@@ -1,0 +1,161 @@
+/* 예제용 기본 속성 시작 */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gmedium";
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  padding: 10px;
+  box-sizing: border-box;
+}
+h1 {
+  margin-top: 10px;
+}
+
+@font-face {
+  src: url("../fonts/GmarketSansTTFMedium.ttf");
+  font-family: "Gmedium";
+}
+@font-face {
+  src: url("../fonts/GmarketSansTTFLight.ttf");
+  font-family: "Glight";
+}
+@font-face {
+  src: url("../fonts/GmarketSansTTFBold.ttf");
+  font-family: "Gbold";
+}
+
+/* 예제용 기본 속성 끝 */
+
+#wrap {
+  width: 500px;
+  height: 600px;
+  background-color: gray;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+#superdeal {
+  width: 400px;
+  height: 150px;
+  background-color: aliceblue;
+
+  position: absolute;
+  left: 50px;
+  top: 50px;
+
+  padding-left: 20px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+#superdeal ul li {
+  float: left;
+  margin-right: 5px;
+  color: bisque;
+}
+#superdeal ul li a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 70%;
+}
+#superdeal .item {
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  color: black;
+}
+
+#superdeal .price {
+  font-size: 14px;
+  font-family: "Gbold";
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  color: black;
+}
+
+#overseas {
+  width: 400px;
+  height: 200px;
+  background-color: antiquewhite;
+
+  position: absolute;
+  left: 50px;
+  top: 200px;
+
+  padding-left: 20px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#overseas .title {
+  display: block;
+  font-family: "Gbold";
+  font-size: 25px;
+  margin: 5px 0 3px;
+
+  position: relative;
+  left: 170px;
+}
+
+#overseas ul li {
+  float: left;
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin-right: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#overseas ul li a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 70%;
+}
+#overseas ul li a img:hover{
+  background-color: white;
+  opacity: 0.7;
+}
+
+#overseas ul li a .item {
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  color: black;
+}
+
+#overseas ul li a .price {
+  font-size: 16px;
+  font-family: "Gbold";
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  color: black;
+}
+
+#sns {
+  width: 200px;
+  height: 100px;
+  background-color: aqua;
+
+  position: absolute;
+  left: 250px;
+  top: 450px;
+}
+#sns ul {
+  padding: 20px 0 0 20px;
+}
+#sns ul li {
+  float: left;
+  margin-right: 10px;
+}

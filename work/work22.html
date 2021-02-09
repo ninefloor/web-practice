@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <script>
+    var choice=confirm("로또번호 생성기입니다. 6개의 숫자를 생성하시겠습니까?");
+    var lotto=[];
+    if (choice==true) {
+      for (var i=0; i<=20; i++){
+        num=Math.ceil(Math.random()*45); // 번호 생성
+        for(var j=0; j<=5; j++){
+          if(lotto[j]==num){
+            break;
+          } else if(lotto[j]!=num){
+            lotto.push(num);
+            break;
+          }
+        }
+        if(lotto.length==6){
+          break;
+        }
+      }
+      document.write(lotto[0]+" / "+lotto[1]+" / "+lotto[2]+" / "+lotto[3]+" / "+lotto[4]+" / "+lotto[5]);
+    } else {
+      document.write("번호를 생성하려면 새로고침을 누르세요.");
+    }
+  </script>
+  <body></body>
+</html>

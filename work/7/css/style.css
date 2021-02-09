@@ -1,0 +1,59 @@
+.i, .doc, .calender, .japan, .newzealand, .china, .hongkong, .uk, .cambodia, .vietnam{
+    background: url("../images/icon_set1.png") no-repeat;
+}
+
+div{
+    display: inline-block;
+}
+.i{
+    width: 20px;
+    height: 20px;
+    background-position: 0 0;
+}
+
+.doc{
+    width: 16px;
+    height: 16px;
+    background-position: -40px -80px;
+}
+
+.calender{
+    width: 22px;
+    height: 20px;
+    background-position: -60px 0;
+}
+.japan{
+    width: 24px;
+    height: 24px;
+    background-position: 0 -300px;
+}
+.newzealand{
+    width: 24px;
+    height: 24px;
+    background-position: -40px -300px;
+}
+.china{
+    width: 24px;
+    height: 24px;
+    background-position: -80px -300px;
+}
+.hongkong{
+    width: 24px;
+    height: 24px;
+    background-position: -120px -300px;
+}
+.uk{
+    width: 24px;
+    height: 24px;
+    background-position: -160px -300px;
+}
+.cambodia{
+    width: 24px;
+    height: 24px;
+    background-position: -200px -300px;
+}
+.vietnam{
+    width: 24px;
+    height: 24px;
+    background-position: -240px -300px;
+}

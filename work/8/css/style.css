@@ -1,0 +1,135 @@
+/* 기본 속성 시작 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+@font-face{
+    src: url(../fonts/KoPubWorld\ Dotum\ Light.ttf);
+    font-family: "kopubdotum";
+}
+@font-face{
+    src: url(../fonts/Cafe24Ssurround.ttf);
+    font-family: "surround";
+}
+.red{
+    color: red;
+}
+.blue{
+    color: royalblue;
+    font-family: "surround";
+}
+/* 기본 속성 끝 */
+
+#wrap{
+    width: auto;
+    height: auto;
+}
+#contents{
+    width: 1050px;
+    height: 630px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+    #contents .logo{
+        width: 112px;
+        height: auto;
+
+        position: absolute;
+        left: 60px; 
+        top: 80px;
+    }
+    #contents .title{
+        width: 300px;
+        height: auto;
+        font-size: 44px;
+        font-family: "surround";
+        font-weight: bolder;
+
+        position: absolute;
+        left: 50px; 
+        top: 140px;
+    }
+    #contents .con1{
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        font-family: "kopubdotum";
+        font-weight: bolder;
+        color: rgb(77, 77, 77);
+
+        position: absolute;
+        left: 50px; 
+        top: 260px;
+
+    }
+    #contents .con2{
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        font-family: "kopubdotum";
+        font-weight: bolder;
+        color: rgb(121, 121, 121);
+
+        position: absolute;
+        left: 50px; 
+        top: 370px;
+
+    }
+    #contents .con3{
+        width: auto;
+        height: auto;
+        font-size: 25px;
+        font-family: "kopubdotum";
+        font-weight: bolder;
+
+        position: absolute;
+        left: 50px; 
+        top: 450px;
+    }
+    #contents .img{
+        width: auto;
+        height: auto;
+
+        position: absolute;
+        left: 800px; 
+        top: 250px;
+    }
+#footer{
+    width: auto;
+    height: auto;
+    background-color: rgb(238, 238, 238);
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+    #footer .banner{
+        width: auto;
+        height: auto;
+        background-color: rgb(251, 212, 72);
+        margin-bottom: 10px;
+        text-align: center;
+    }
+        .banner a{
+            
+        }
+    #footer .copyright{
+        width: 100%;
+        height: 125px;
+        background-color: rgb(51, 51, 51);
+        text-align: center;
+        padding-top: 50px;
+        box-sizing: border-box;
+    }
+        .copyright span{
+            color: white;
+            font-family: "kopubdotum";
+            font-weight: bold;
+        }
