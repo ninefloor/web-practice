@@ -1,0 +1,134 @@
+/* 예제용 기본 속성 시작 */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "kolight";
+}
+
+a {
+  text-decoration: none;
+
+}
+ul {
+  list-style-type: none;
+}
+
+@font-face{
+  src: url(../fonts/KoPubWorld\ Dotum\ Light.ttf);
+  font-family: "kolight";
+}
+
+.blue{
+  color: #018cdb;
+}
+
+/* 예제용 기본 속성 끝 */
+
+#wrap{
+  width: 100%;
+  height: auto;
+}
+
+#content1{
+  width: 1250px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.title{
+  margin: 10px;
+  font-size: 20px;
+}
+
+#content1>div{
+  float: left;
+}
+#content1>#con1,#con2,#con3{
+  width: 400px;
+  height: 250px;
+  text-align: center;
+}
+
+#content1 .bar{
+  width: 1px;
+  height: 180px;
+  background-color: gray;
+  margin-top: 35px;
+}
+
+#content1>div>span{
+  display: block;
+  margin-bottom: 10px;
+}
+
+#content1 .img{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+#content1 .img>img{
+  position: relative;
+  top: 20%;
+}
+#content1 .con_title{
+  width: auto;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#content1 .text{
+  width: 350px;
+  height: auto;
+  font-size: 14px;
+  color: gray;
+  margin: 0 auto;
+
+}
+
+#content2{
+  width: 1250px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#content2 .text{
+  width: 95%;
+  font-size: 16px;
+  color: gray;
+  margin-left: 25px; 
+  display: block;
+}
+
+#content2 ul{
+  width: 95%;
+  margin-top: 25px;
+  margin-left: 25px;
+  border-top: 3px solid black;
+}
+
+#content2 ul li{
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid gray;
+  padding-left: 20px;
+  padding-top: 14px;
+  box-sizing: border-box;
+}
+#content2 ul li>span{
+  display: inline-block;
+}
+#content2 ul li>.table_title{
+  width: 300px;
+  font-weight: bold;
+}
+#content2 ul li>.table_text{
+  color: rgb(75, 75, 75);
+}
