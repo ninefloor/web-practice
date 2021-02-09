@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>네이버 로그인</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+        <div id="header">
+            <a href="http://www.naver.com" class="logo"></a>
+            <div id="lang">
+                <select name="lang" id="lang">
+                    <option value="ko_KR">한국어</option>
+                    <option value="en_US">English</option>
+                    <option value="zh_Hans_CN">中文(简体)</option>
+                    <option value="zh_Hant_TW">中文(台灣)</option>
+                </select>
+            </div>
+        </div>
+        <div id="container">
+            <div id="contents">
+                <form action="#">
+                    <div id="id_area">
+                        <input type="text" name="id" id="id" placeholder="아이디" class="idpw">
+                    </div>
+                    <div id="pw_area">
+                        <input type="password" name="pw" id="pw" placeholder="비밀번호" class="idpw">
+                    </div>
+                    <input type="submit" value="로그인" id="submit_login">
+                    <div id="check">
+                        <div id="login_check">
+                            <input type="checkbox" name="login_chk" id="login_chk">
+                            <label for="login_chk">로그인 상태 유지</label>
+                        </div>
+                        <div id="ip_check">
+                            <a href="#" target="_blank">IP 보안</a>
+                            <span class="ip_chk">
+                                <input type="checkbox" name="ip_chk" id="ip_chk">
+                                <label for="ip_chk">OFF</label>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+                <div id="qr_wrap">
+                    <p class="title">더욱 간편한 로그인</p>
+                    <div id="qr_area">
+                        <div class="item">
+                            <button id="qr_login"><span class="qr_img"></span>
+                                <span class="text">QR코드 로그인</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button id="otp_login"><span class="otp_img"></span>
+                                <span class="text">일회용 번호 로그인</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

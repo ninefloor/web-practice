@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>무신사 로그인</title>
+    <link rel="stylesheet" type="text/css" href="./css/style1.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="login_area">
+        <div id="login_header">
+          <img src="./images/logo_mwusinsa.svg" />
+        </div>
+        <div id="login_box">
+          <form>
+            <input
+              class="input"
+              type="text"
+              placeholder="아이디를 입력해 주세요"
+            />
+            <br />
+            <input
+              class="input"
+              type="password"
+              placeholder="비밀번호를 입력해 주세요"
+            />
+            <br />
+
+            <span class="submit"><input type="submit" value="로그인" /></span>
+            <label class="checkbox">
+              <input type="checkbox" name="autologin" id="autologin" /> 자동
+              로그인
+            </label>
+          </form>
+          <ul id="sub_menu">
+            <li><a href="#">회원 가입</a></li>
+            <li><a href="#">아이디 찾기</a></li>
+            <li><a href="#">비밀번호 찾기</a></li>
+          </ul>
+        </div>
+        <div id="social">
+          <a id="kakao" href="#">
+            <span>카카오 로그인</span>
+          </a>
+          <a id="apple" href="#">
+            <span>Apple 로그인</span>
+          </a>
+        </div>
+        <div id="non_member">
+          <div id="tap_head">
+            <a href="./index.html" id="non_member_buy" class="non_member_tap">
+              <span>비회원 구매하기</span>
+            </a>
+            <a href="#" id="non_member_lookup" class="non_member_tap">
+              <span>비회원 주문 조회</span>
+            </a>
+          </div>
+          <div id="tap_contents2">
+            <form action="#">
+              <ul>
+                <li>
+                  <label for="order_name">이름</label>
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="주문자명을 입력해 주세요"
+                  />
+                </li>
+                <li>
+                  <label for="oreder_number">주문번호</label>
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="주문번호를 입력해 주세요"
+                  />
+                </li>
+              </ul>
+            </form>
+            <span class="submit"
+              ><input type="submit" value="비회원 주문조회"
+            /></span>
+          </div>
+          <footer id="footer">
+            <ul id="footer_menu">
+              <li><a href="#">이용약관</a></li>
+              <li>
+                <a href="#"><b>개인정보처리방침</b></a>
+              </li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
