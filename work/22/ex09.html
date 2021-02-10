@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    function amicable(n1,n2){
+      var sum1=0;
+      var sum2=0;
+      // n1, n2의 진약수 합 도출
+      for(var i=1; i<n1; i++){
+        if(n1%i==0){
+          sum1=sum1+i;
+        } 
+      }
+      for(var i=1; i<n2; i++){
+        if(n2%i==0){
+          sum2=sum2+i;
+        } 
+      }
+      // 친화수 판별
+      if(sum1==n2 && sum2==n1){
+        document.write(n1+"과"+n2+"는 친화수가 맞습니다.");
+        return;
+      } else {
+        document.write(n1+"과 "+n2+"는 친화수가 아닙니다.");
+        return;
+      }
+    }
+    var num1=prompt("친화수인지 판별 할 첫 번째 정수를 입력하세요");
+    var num2=prompt("친화수인지 판별 할 두 번째 정수를 입력하세요");
+    num1=Number(num1);
+    num2=Number(num2);
+    amicable(num1,num2);
+  </script>
+</body>
+</html>

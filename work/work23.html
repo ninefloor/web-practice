@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <script>
+    var arr=new Array(0);
+    var num=0;
+    var choice=0;
+    var price=0;
+    var name='';
+
+    // 인원 및 이름 설정
+    num=prompt("몇 명?");
+    num=Number(num);
+
+    for(var i=1; i<=num; i++){
+      name=prompt(i+"번 이름 입력");
+      arr[i]=name;
+    }
+    
+    price=prompt("오늘 술 값은?(숫자만 입력)");
+    price=Number(price);
+
+    alert("추첨을 시작합니다.");
+    choice=Math.ceil(Math.random()*num);
+    document.write(arr[choice]+" 당첨! "+price+"원은 당신이 쏩니다!");
+  </script>
+  <body></body>
+</html>

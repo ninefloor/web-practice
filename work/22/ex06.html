@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    var num=prompt("완전수인지 판별할 정수를 입력하세요");
+    var num_arr=[];
+    num=Number(num);
+    // 약수 도출하여 배열에 넣기 (본인 제외)
+    for(var i=1; i<num; i++){
+      if(num%i==0){
+        num_arr.push(i);
+      } 
+    }
+    //약수 모두 더하기
+    var sum=0;
+    for(var j=0; j<num_arr.length; j++){
+      sum=sum+num_arr[j];
+    }
+    // 완전수 판별
+    if (sum==num){
+      document.write(num+"은 완전수가 맞습니다.")
+    } else {
+      document.write(num+"은 완전수가 아닙니다.")
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    var num1=prompt("최대 공배수를 구할 첫 번째 정수 입력");
+    var num2=prompt("최대 공배수를 구할 두 번째 정수 입력");
+    num1=Number(num1);
+    num2=Number(num2);
+    var num1_arr=[];
+    var num2_arr=[];
+
+    function make_num_arr (){
+      for(var i=2; i<=num1; i++){
+        if(num1%i==0){
+          num1_arr.push(i);
+        } 
+      }
+      for(var i=2; i<=num2; i++){
+        if(num2%i==0){
+          num2_arr.push(i);
+        } 
+      }
+    }
+
+    var com_arr=[];
+    function make_com_arr (){
+      for(var j=0; j<num1_arr.length; j++){
+        for(var k=0; k<num2_arr.length; k++){
+          if(num1_arr[j]==num2_arr[k]){
+            com_arr.push(num1_arr[j]);
+          }
+        }
+      }
+    }
+
+    make_num_arr();
+    make_com_arr();
+
+    var max_com=0;
+    for(var i=0; i<com_arr.length; i++){
+      if(max_com<com_arr[i]){
+        max_com=com_arr[i];
+      }
+    }
+
+    var min_com=num1*num2/max_com
+
+    document.write(num1+", "+num2+"의 최대 공배수는 "+min_com+"입니다.")
+
+  </script>
+</body>
+</html>

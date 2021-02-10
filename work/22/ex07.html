@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    function prime(){
+      var num=prompt("소수인지 판별할 정수를 입력하세요");
+      num=Number(num);
+      if(num==2){
+        document.write(num+"은 소수가 맞습니다.")
+        return;
+      }
+      for(var i=2; i<num; i++){
+        if(num%i==0){
+          document.write(num+"은 소수가 아닙니다.")
+          return;
+        }
+      }
+      document.write(num+"은 소수가 맞습니다.")
+    }
+    prime();
+  </script>
+</body>
+</html>
