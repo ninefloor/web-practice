@@ -1,0 +1,37 @@
+/* reset */
+* {margin: 0; padding: 0; font-size: 24px; color: #fff;}
+a {color: #333; text-decoration: none;}
+li {list-style: none;}
+table {border-spacing: 0;}
+.clearfix::before, .clearfix::after {display: block; content:''; clear:both;}
+
+#wrap {width: 1200px; margin: 0px auto;}
+
+/* header */
+#header {text-align: center;}
+#header .logo {float: left; width:250px; height:100px; line-height: 100px; background: #d1c4e9;}
+#header .nav {float: right; width:950px; height:100px; line-height: 100px; background: #b39ddb;}
+
+/* banner */
+#banner {text-align: center; height: 400px; line-height: 400px; background: #9575cd;}
+
+/* contents */
+#contents {text-align: center;}
+#contents > div {float: left; width: 33.333333%; }
+#contents > div.cont1 {background: #7e57c2; height: 247px;}
+#contents > div.cont2 {background: #673ab7; height: 247px; line-height: 247px;}
+#contents > div.cont3 {background: #5e35b1; height: 247px; line-height: 247px;}
+
+/* tab-menu */
+.tab-menu {padding: 10px;}
+.tab-menu .tab-btn ul {overflow: hidden;}
+.tab-menu .tab-btn li {float: left; width: 160px; background: #9575cd; text-align: center; margin-right: -1px;}
+.tab-menu .tab-btn li.active {text-decoration: underline;}
+.tab-menu .tab-btn li a {padding: 10px; display: block; color: #fff;}
+.tab-menu .tab-cont {padding: 20px; background: #512da8;  text-align: left;}
+
+/* footer */
+#footer {height: 100px; line-height: 100px; text-align: center; }
+#footer .foot1 {float: left; width: 200px; background: #5e35b1;}
+#footer .foot2 {float: left; width: 800px; background: #512da8;}
+#footer .foot3 {float: left; width: 200px; background: #4527a0;}
