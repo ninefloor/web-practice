@@ -1,5 +1,7 @@
 $(document).ready(function(){
-  $(".layer").show();
+  $(".layerPopup").click(function(){
+    $(".layer").show();
+  })
   $(".close").click(function(){
     $(this).parent().hide();
   })
