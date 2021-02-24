@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jquery-cookie 연결 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <!-- jquery-cookie 끝 -->
+  </head>
+  <script>
+    // $(document).ready(function () {
+    //   $(".closeBtn").on("click",closePop());
+    // });
+    // function closePop() {
+    //   $("#notice_wrap").fadeOut();
+    // };
+
+    $(function () {
+      if($.cookie("popup")=="book_val"){
+        // 쿠키의 존재 여부 파악 : popup이라는 이름의 쿠키의 값이 book_val 인가?
+        $("#notice_wrap").hide();
+      }
+      $(".closeBtn").on("click",closePop);
+      
+      let expChk=$("#expiresChk"); // 체크 여부를 확인하기 위한 변수 선언
+      function closePop() {
+        // 체크 여부를 판단하여 체크가 되어있을 경우 쿠키를 생성하고 닫는 함수 선언
+        if(expChk.is(":checked")==true){ // 체크박스에 checked 속성이 true 인가?
+          $.cookie("popup","book_val",{expries:7, path:"/"});
+          // 쿠키 생성 (jquery-cookie)
+          // .cookie("name","value",{expries:num(day),path:"/(현재 경로)"})
+        }
+        $("#notice_wrap").fadeOut();
+      };
+    });
+    
+
+  </script>
+  <style>
+    #notice_wrap{
+      border: 1px #aaa solid;
+    }
+  </style>
+  <body>
+    <div id="notice_wrap">
+      <img src="./images/popup_img.jpg" alt="popup_img">
+      <p class="closeWrap">
+        <input type="checkbox" name="expiresChk" id="expiresChk">
+        <label for="expiresChk">7일간 이 창 열지 않기</label>
+        <button class="closeBtn">닫기</button>
+      </p>
+    </div>
+  </body>
+</html>
