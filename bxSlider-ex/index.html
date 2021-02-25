@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- bx-slider js/css 연결 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- bx-slider js/css 끝 -->
+  </head>
+  <script>
+    $(document).ready(function () {
+      $(".slider1").bxSlider(); // .bxSlider
+      $(".slider2").bxSlider({
+        auto:true, // 자동으로 넘어가는 옵션 (default:false)
+        speed:500, // 전환되는 속도
+        pause:2000, // 한 슬라이드가 머무는 시간
+        autoControls:true, // 재생 제어창 추가
+        pager:false, // 페이지 인디케이터 표시 (default:true)
+        mode:'fade' // 슬라이드 이동 방향 (default:'horizontal', 'vertical' 옵션 사용 가능)
+      });
+      $(".slider3").bxSlider({
+        captions:true // 캡션 활성화 (default:false)
+        // captions 사용법
+        // : 이미지를 div로 감싼 후 img에 title 속성을 준다
+      });
+
+    });
+  </script>
+  <style>
+    #resize1{
+      width: 350px;
+    }
+    .slider1{
+      text-align: center;
+    }
+    #resize2{
+      width: 800px;
+      height: 800px;
+    }
+    #resize3{
+      width: 800px;
+      height: 1000px;
+    }
+  </style>
+  <body>
+    <div id="resize1">
+      <div class="slider1">
+        <div>slider1</div>
+        <div>slider2</div>
+      </div>
+    </div>
+    <div id="resize2">
+      <!-- 
+        bxslider로 지정해 준 요소를 감싸는 div를 생성하여 그 크기를 지정해주면 크기 조절 가능
+       -->
+      <div class="slider2">
+        <img src="./images/slide1.jpg" alt="">
+        <img src="./images/slide2.jpg" alt="">
+        <img src="./images/slide3.jpg" alt="">
+        <img src="./images/slide4.jpg" alt="">
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <div id="resize3">
+      <div class="slider3">
+        <div><img src="./images/slide1.jpg" alt="" title="킹쁘다!"></div>
+        <div><img src="./images/slide2.jpg" alt="" title="아름답다!"></div>
+        <div><img src="./images/slide3.jpg" alt="" title="♡사랑해요 킹태연♡"></div>
+        <div><img src="./images/slide4.jpg" alt="" title="♡너만 보여 킹태연♡"></div>
+      </div>
+    </div>
+  </body>
+</html>
