@@ -1,6 +1,8 @@
 $(document).ready(function () {
   if ($.cookie("autologin")=="true"){
     $("#autologin").prop("checked",true)
+    $("form>.checkbox").addClass("checkbox_on");
+      login_value=1;
   } else if($.cookie("autologin")=="false"){
     $("#autologin").prop("checked",false)
   }
