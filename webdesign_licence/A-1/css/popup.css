@@ -1,0 +1,46 @@
+#popup{
+  width: 500px;
+  height: 500px;
+  background-color: #ffffff;
+  
+  position: fixed;
+  left: 35%;
+  top: 10%;
+  
+  z-index: 10;
+  
+  display: none;
+  border: 1px #aaa solid;
+}
+
+#popup>div:first-child{
+  background-color: #ffffff;
+  display: inline;
+  
+  position: relative;
+  top: 20px;
+  left: 27%;
+  
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+#popup>div:nth-child(2){
+  background-color: #ffffff;
+  position: relative;
+  top: 30px;
+  left: 50px;
+  
+  width: 400px;
+  height: 350px;
+}
+
+#popup>div:nth-child(2)>p{
+  margin-bottom: 10px;
+}
+
+#popup>#closeBtn{
+  float: right;
+  position: relative;
+  top: 77px;
+}

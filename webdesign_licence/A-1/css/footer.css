@@ -1,0 +1,31 @@
+#footer>.logo{
+  float: left;
+  width: 200px;
+  height: 100px;
+  background-color: #ffffff;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+#footer>.copyright{
+  float: left;
+  width: 800px;
+  height: 100px;
+  background-color: #ffffff;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.copyright>address{
+  text-align: center;
+}
+
+#footer>.sns{
+  float: left;
+  width: 200px;
+  height: 100px;
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 25px;
+  box-sizing: border-box;
+}

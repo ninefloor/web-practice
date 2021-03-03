@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+  <title>GREEN 복지재단</title>
+</head>
+
+<body>
+  <div id="popup">
+    <div>
+      참여방법1
+    </div>
+    <p>
+      "아이들이 집다운 집에서 잠들 수 있도록"
+      <br><br>
+      <span>집을 선물해 주세요</span>
+    </p>
+    <p>
+      "매월 정기후원을 통해 보내주신 후원금은"
+      <br><br>
+      "옥탑, 지하, 비닐하우스, 컨테이너, 판자촌 등"
+      <br><br>
+      "열악한 주거환경에서 생활하는 아이들이"
+      <br><br>
+      "안전하고 집 다운 새 집으로"
+      <br><br>
+      "이사할 수 있도록 하는데 사용됩니다."
+    </p>
+    <div class="closeBtn">
+      <img src="./images/popup_btn.jpg" alt="닫기">
+    </div>
+  </div>
+  <div id="wrap">
+    <header id="header">
+      <div class="logo">
+        <img src="./images/logo1.png" alt="상단로고">
+      </div>
+      <nav class="nav">
+        <ul class="gnb">
+          <li>
+            <a href="#">재단소개</a>
+            <ul class="lnb">
+              <li><a href="#">설립취지</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">찾아오시는 길</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">후원하기</a>
+            <ul class="lnb">
+              <li><a href="#">국내후원</a></li>
+              <li><a href="#">해외후원</a></li>
+              <li><a href="#">맞춤후원</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">자료실</a>
+            <ul class="lnb">
+              <li><a href="#">서식자료실</a></li>
+              <li><a href="#">사진자료실</a></li>
+              <li><a href="#">후원양식</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">스토리</a>
+            <ul class="lnb">
+              <li><a href="#">웹진</a></li>
+              <li><a href="#">보고서</a></li>
+              <li><a href="#">나의 후원</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="wing"></div>
+      </nav>
+    </header>
+    <div id="slide">
+      <div id="slide_list">
+        <img src="./images/slide1.jpg" alt="집다운집으로">
+        <img src="./images/slide2.jpg" alt="나에게보내는선물">
+        <img src="./images/slide3.jpg" alt="안개세상속지유">
+      </div>
+    </div>
+    <div id="contents">
+      <div id="cont1">
+        <div class="notice">
+          <h3>공지사항</h3>
+          <ul>
+            <li><a href="#" onclick="popup();">
+                <span>초록우산 보물찾기 여행 모집</span><span>2021-03-01</span>
+              </a></li>
+            <li><a href="#">
+                <span>초록우산 사업장 후원자 모집</span><span>2021-03-01</span>
+              </a></li>
+            <li><a href="#">
+                <span>그린 합창단 2기 모집</span><span>2021-03-01</span>
+              </a></li>
+            <li><a href="#">
+                <span>그린 합창단 1회 정기공연</span><span>2021-03-01</span>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="cont2">
+        <div class="gallary">
+          <h3>갤러리</h3>
+          <ul>
+            <li><a href="#"><img src="./images/gallery1.jpg" alt="갤러리1"></a></li>
+            <li><a href="#"><img src="./images/gallery2.jpg" alt="갤러리2"></a></li>
+            <li><a href="#"><img src="./images/gallery3.jpg" alt="갤러리3"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="cont3">
+        <img src="./images/banner.jpg" alt="배너">
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="logo_foot">
+        <img src="./images/logo2.png" alt="하단로고">
+      </div>
+      <div class="copyright">
+        <address>
+          Green 복지재단 사업자 등록번호 : 202-12-12345 회장 홍길동 대표이사 김영철 <br>
+          (61928) 광주광역시 서구 경열로 3(농성동 271-4) 대표전화 1588-1940 팩스 062-362-7798<br>
+          Copyright (c) 2019 Greenfund Korea. All rights reserved.
+        </address>
+      </div>
+      <div class="family">
+        <select name="family" id="family">
+          <option value="">패밀리사이트</option>
+          <option value="">광주종합사회복지관</option>
+          <option value="">광주가정위탁지원센터</option>
+          <option value="">광주Green마음학교</option>
+          <option value="">광주Green사랑마을</option>
+          <option value="">광주아동보호전문기관</option>
+        </select>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
