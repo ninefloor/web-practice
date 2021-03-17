@@ -1,0 +1,303 @@
+/* 기본 속성 시작 */
+
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	color: #333333;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* 기본 속성 끝 */
+
+/* wrap, popup 시작 */
+
+#wrap {
+	width: 1200px;
+	height: 700px;
+	background-color: #ffffff;
+	margin: 0 auto;
+	position: relative;
+}
+
+#popup {
+	display: none;
+	width: 450px;
+	height: 400px;
+	background-color: #ffffff;
+	border: 2px #333333 solid;
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	padding: 20px;
+	box-sizing: border-box;
+
+	z-index: 10;
+}
+
+#popup > p {
+	margin: 20px 0;
+	font-size: 14px;
+}
+
+#popup > button {
+	float: right;
+	position: relative;
+	top: 70px;
+}
+
+/* wrap, popup 끝 */
+
+/* header 시작 */
+
+#header {
+	width: 1200px;
+	height: 100px;
+	background-color: #ffffff;
+
+	position: relative;
+	z-index: 2;
+}
+
+#header > #logo {
+	width: 200px;
+	height: 100px;
+	padding: 20px 0;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	text-align: center;
+	float: left;
+}
+
+#header > #nav {
+	width: 1000px;
+	height: 100px;
+	background-color: #ffffff;
+	float: left;
+}
+
+#nav > .gnb {
+	float: right;
+	position: relative;
+	top: 70px;
+	right: 30px;
+}
+
+.gnb > li {
+	float: left;
+}
+
+.gnb > li > a {
+	display: block;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background-color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.gnb > li > a:hover {
+	background-color: darkorange;
+	color: #ffffff;
+}
+
+.lnb {
+	display: none;
+}
+
+.lnb > li > a {
+	display: block;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background-color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.lnb > li > a:hover {
+	background-color: darkorange;
+	color: #ffffff;
+}
+
+#header > .wing {
+	display: none;
+	width: 1200px;
+	height: 100px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 100px;
+}
+
+/* header 끝 */
+
+/* slide 시작 */
+
+#slide {
+	width: 1200px;
+	height: 300px;
+	background-color: #ffffff;
+}
+
+#slide_contain {
+	position: relative;
+}
+
+#slide_contain > img {
+	position: absolute;
+	width: 1200px;
+	height: 300px;
+}
+
+/* slide 끝 */
+
+/* contents 시작 */
+
+#contents {
+	width: 1200px;
+	height: 200px;
+	background-color: #ffffff;
+}
+
+#contents > #cont1 {
+	width: 400px;
+	height: 200px;
+	background-color: #ffffff;
+	float: left;
+}
+
+#cont1 > h3 {
+	width: 370px;
+	height: 30px;
+	margin: 15px 15px 5px;
+}
+
+.notice > .notice_list {
+	width: 370px;
+	height: 140px;
+	margin: 5px 15px 10px;
+}
+
+.notice_list > li > a {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.notice_list > li > a > span:nth-child(2) {
+	float: right;
+}
+
+#contents > #cont2 {
+	width: 400px;
+	height: 200px;
+	background-color: #ffffff;
+	float: left;
+}
+
+.gallary > .gallary_list {
+	width: 370px;
+	height: 140px;
+	margin: 5px 15px 10px;
+}
+
+.gallary_list > li {
+	float: left;
+	margin-top: 8px;
+	margin-right: 3px;
+}
+
+.gallary_list > li > img {
+	width: 120px;
+	height: 120px;
+}
+
+.gallary_list > li > img:hover {
+	opacity: 0.7;
+}
+
+#cont2 > h3 {
+	width: 370px;
+	height: 30px;
+	margin: 15px 15px 5px;
+}
+
+#contents > #cont3 {
+	width: 400px;
+	height: 200px;
+	background-color: #ffffff;
+	float: left;
+	padding: 15px 0;
+	box-sizing: border-box;
+}
+
+/* contents 끝 */
+
+/* footer 시작 */
+
+#footer {
+	width: 1200px;
+	height: 100px;
+	background-color: #ffffff;
+}
+
+#footer > #f_contain {
+	width: 1000px;
+	height: 100px;
+	float: left;
+}
+
+#f_contain > #f_gnb {
+	width: 1000px;
+	height: 50px;
+	background-color: #ffffff;
+	padding: 15px 0;
+	box-sizing: border-box;
+}
+
+#f_gnb > ul {
+	width: 900px;
+	height: 20px;
+	margin: 0 auto;
+}
+
+#f_gnb > ul > li {
+	float: left;
+	margin: 0 35px;
+}
+
+#f_contain > #copyright {
+	width: 1000px;
+	height: 50px;
+	background-color: #ffffff;
+	text-align: center;
+	padding-top: 15px;
+	box-sizing: border-box;
+}
+
+#footer > #family {
+	width: 200px;
+	height: 100px;
+	background-color: #ffffff;
+	float: left;
+	text-align: center;
+}
+
+#family > .family {
+	width: 150px;
+	height: 40px;
+	margin-top: 30px;
+}
+
+/* footer 끝 */
