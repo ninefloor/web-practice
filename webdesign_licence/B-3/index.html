@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <title>세계의 미술작품</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/app.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="popup">
+      <h3>오감만족 우리동네 미술관</h3>
+      <img src="./images/popup_img.jpg" alt="popup">
+      <div class="closeBtn" onclick="popupClose();"><img src="./images/popup_btn.jpg" alt="close"></div>
+    </div>
+    <header id="header">
+      <div id="h_cont">
+        <div id="logo">
+          <img src="./images/logo1.jpg" alt="logo">
+        </div>
+        <nav id="nav">
+          <ul class="gnb">
+            <li>
+              <a href="#">소장처별</a>
+              <ul class="lnb">
+                <li><a href="#">한국</a></li>
+                <li><a href="#">프랑스</a></li>
+                <li><a href="#">이탈리아</a></li>
+                <li><a href="#">독일</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">장르별</a>
+              <ul class="lnb">
+                <li><a href="#">회화</a></li>
+                <li><a href="#">판화</a></li>
+                <li><a href="#">공예/고대유물</a></li>
+                <li><a href="#">그 외</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">테마별</a>
+              <ul class="lnb">
+                <li><a href="#">초상화/인물</a></li>
+                <li><a href="#">종교</a></li>
+                <li><a href="#">신화/문학</a></li>
+                <li><a href="#">일상/스포츠</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">시대별</a>
+              <ul class="lnb">
+                <li><a href="#">1900년대 이전</a></li>
+                <li><a href="#">1900년대</a></li>
+                <li><a href="#">현대</a></li>
+                <li><a href="#">그 외</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="slide">
+      <div id="slide_box">
+        <img src="./images/slide1.jpg" alt="slide1">
+        <img src="./images/slide2.jpg" alt="slide2">
+        <img src="./images/slide3.jpg" alt="slide3">
+      </div>
+    </div>
+    <div id="contents">
+      <div id="cont1">
+        <h3>공지사항</h3>
+        <div>
+          <ul class="notice">
+            <li><a href="#" onclick="popup();"><span>공지사항입니다.</span><span>[2021-03-01]</span></a></li>
+            <li><a href="#"><span>공지사항입니다.</span><span>[2021-03-01]</span></a></li>
+            <li><a href="#"><span>공지사항입니다.</span><span>[2021-03-01]</span></a></li>
+            <li><a href="#"><span>공지사항입니다.</span><span>[2021-03-01]</span></a></li>
+            <li><a href="#"><span>공지사항입니다.</span><span>[2021-03-01]</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="cont2">
+        <h3>갤러리</h3>
+        <div>
+          <ul class="gallary">
+            <li><img src="./images/gallery1.jpg" alt="girl"></li>
+            <li><img src="./images/gallery2.jpg" alt="monk"></li>
+            <li><img src="./images/gallery3.jpg" alt="gogh"></li>
+          </ul>
+        </div>
+      </div>
+      <div id="cont3">
+        <a href="#"><img src="./images/banner.png" alt="banner"></a>
+      </div>
+    </div>
+    <footer id="footer">
+      <div id="f_cont">
+        <div id="f_logo">
+          <img src="./images/logo2.jpg" alt="logo_footer">
+        </div>
+        <div id="copyright">
+          <address>
+            Copyright &copy; 2021 Daegu ART MUSEUM All rights reserved.
+          </address>
+        </div>
+        <div id="sns">
+          <a href="#"><img src="./images/youtube.png" alt="youtube"></a>
+          <a href="#"><img src="./images/face.png" alt="facebook"></a>
+          <a href="#"><img src="./images/insta.png" alt="instagram"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body></html>

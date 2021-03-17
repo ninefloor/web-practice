@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/app.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+   <div id="popup">
+     <h3>탐나는 제주 항공 바로 제주 이벤트</h3>
+     <img src="./images/popup_img.jpg" alt="jeju">
+     <div class="closeBtn" onclick="popupClose();"><img src="./images/popup_btn.jpg" alt="close"></div>
+   </div>
+    <header id="header">
+      <div id="h_cont">
+        <div class="wing"></div>
+        <div id="logo">
+          <img src="./images/logo.jpg" alt="logo">
+        </div>
+        <nav id="nav">
+          <ul class="gnb">
+            <li>
+              <a href="#">해외여행</a>
+              <ul class="lnb">
+                <li><a href="#">동남아/대만</a></li>
+                <li><a href="#">중국/홍콩</a></li>
+                <li><a href="#">유럽/두바이</a></li>
+                <li><a href="#">미주/하와이</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">국내여행</a>
+              <ul class="lnb">
+                <li><a href="#">서울/경기권</a></li>
+                <li><a href="#">충청권</a></li>
+                <li><a href="#">전라권</a></li>
+                <li><a href="#">경상/강원권</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">제주도</a>
+              <ul class="lnb">
+                <li><a href="#">버스여행</a></li>
+                <li><a href="#">자유여행</a></li>
+                <li><a href="#">호텔/펜션</a></li>
+                <li></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">렌터카</a>
+              <ul class="lnb">
+                <li><a href="#">국내 렌터카</a></li>
+                <li><a href="#">해외 렌터카</a></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </li>
+          </ul>
+          
+        </nav>
+      </div>
+    </header>
+    <div id="slide">
+      <div class="slide_box">
+         <img src="./images/slide1.jpg" alt="europe">
+         <img src="./images/slide2.jpg" alt="praha">
+         <img src="./images/slide3.jpg" alt="china">
+      </div>
+    </div>
+    <div id="contents">
+      <div id="cont1">
+        <h3>공지사항</h3>
+        <div class="notice">
+          <ul class="notice_list">
+            <li><a href="#" onclick="popup();"><span>공지사항1</span><span>[2021-01-01]</span></a></li>
+            <li><a href="#"><span>공지사항2</span><span>[2021-01-01]</span></a></li>
+            <li><a href="#"><span>공지사항3</span><span>[2021-01-01]</span></a></li>
+            <li><a href="#"><span>공지사항4</span><span>[2021-01-01]</span></a></li>
+            <li><a href="#"><span>공지사항5</span><span>[2021-01-01]</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="cont2">
+        <h3>갤러리</h3>
+        <div class="gallary">
+          <ul class="gallary_list">
+            <li><a href="#"><img src="./images/gallery1.jpg" alt="cablecar"></a></li>
+            <li><a href="#"><img src="./images/gallery2.jpg" alt="train"></a></li>
+            <li><a href="#"><img src="./images/gallery3.png" alt="busan"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="cont3">
+        <a href="#"><img src="./images/baro.png" alt="site"></a>
+        <a href="#"><img src="./images/road.png" alt=""></a>
+      </div>
+    </div>
+    <footer id="footer">
+      <div id="f_cont">
+        <div id="copyright">
+          <address>Copyright &copy; 2021 Korea TOUR All rights reserved</address>
+        </div>
+        <div id="f_right">
+          <div id="sns">
+            <a href="#"><img src="./images/face.png" alt="facebook"></a>
+            <a href="#"><img src="./images/insta.png" alt="instagram"></a>
+            <a href="#"><img src="./images/youtube.png" alt="youtube"></a>
+          </div>
+          <div id="family">
+            <select name="family" id="site_box">
+              <option value="#">패밀리사이트</option>
+              <option value="#">site1</option>
+              <option value="#">site2</option>
+              <option value="#">site3</option>
+              <option value="#">site4</option>
+              <option value="#">site5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

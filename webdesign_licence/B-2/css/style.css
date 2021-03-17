@@ -1,0 +1,321 @@
+@charset utf-8;
+
+/* 기본 속성 시작 */
+
+*{
+  margin: 0;
+  padding: 0;
+  color: #333333;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 기본 속성 끝 */
+
+/* 워랩, 팝업 시작 */
+
+#wrap{
+  width: 100%;
+  height: 700px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+#popup{
+  width: 320px;
+  height: 320px;
+  background-color: #ffffff;
+  border: 3px solid #3e0094;
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  text-align: center;
+  display: none;
+  z-index: 10;
+}
+
+#popup>h3{
+  margin: 10px 0px;
+  text-align: center;
+}
+
+#popup>.closeBtn{
+  position: relative;
+  top: 11px;
+  left: 130px;
+}
+
+/* 워랩, 팝업 끝 */
+
+/* 헤더 시작 */
+
+#header{
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 5;
+}
+
+#h_cont{
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  position: relative;
+}
+
+#h_cont>.wing{
+  width: 1200px;
+  height: 200px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 100px;
+  display: none;
+}
+
+
+#logo{
+  width: 200px;
+  height: 100px;
+  float: left;
+  background-color: #ffffff;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+#nav{
+  width: 1000px;
+  height: 100px;
+  float: left;
+  background-color: #ffffff;
+}
+
+
+#nav>.gnb{
+  float: right;
+  position: relative;
+}
+
+.gnb>li{
+  float: left;
+  position: relative;
+  top: 50px;
+  right: 30px;
+}
+
+.gnb>li>a{
+  display: block;
+  width: 170px;
+  height: 50px;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.gnb>li>a:hover{
+  background-color: #3e0094;
+  color: #ffffff;
+}
+
+.lnb{
+  display: none;
+}
+
+.lnb>li{
+  width: 170px;
+  height: 50px;
+  background-color: #ffffff;
+}
+
+.lnb>li>a{
+  display: block;
+  width: 170px;
+  height: 50px;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.lnb>li>a:hover{
+  background-color: #3e0094;
+  color: #ffffff;
+}
+
+/* 헤더 끝 */
+
+/* 슬라이드 시작 */
+
+#slide{
+  width: 1200px;
+  height: 300px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide_box{
+  width: 1200px;
+  height: 900px;
+  position: relative;
+}
+
+.slide_box img{
+  width: 1200px;
+  height: 300px;
+}
+
+/* 슬라이드 끝 */
+
+/* 컨텐츠 시작 */
+
+#contents{
+  width: 1200px;
+  height: 200px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+#cont1{
+  width: 400px;
+  height: 200px;
+  background-color: #ffffff;
+  float: left;
+}
+#cont1>h3{
+  width: 380px;
+  height: 25px;
+  margin: 10px 10px 0px;
+}
+
+#cont1>.notice{
+  width: 380px;
+  height: 145px;
+  margin: 10px;
+}
+
+.notice>.notice_list>li{
+  margin-bottom: 8px
+}
+
+.notice_list>li>a>span:nth-child(2){
+  float: right;
+}
+
+#cont2{
+  width: 400px;
+  height: 200px;
+  background-color: #ffffff;
+  float: left;
+}
+
+#cont2>h3{
+  width: 380px;
+  height: 25px;
+  margin: 10px 10px 0px;
+}
+
+#cont2>.gallary{
+  width: 380px;
+  height: 145px;
+  margin: 10px;
+  padding: 10px 5px;
+  box-sizing: border-box;
+}
+
+#cont2>.gallary>.gallary_list>li{
+  float: left;
+  margin-right: 8px;
+}
+
+#cont2>.gallary>.gallary_list>li>a>img{
+  width: 115px;
+  height: 115px;
+}
+
+#cont3{
+  width: 400px;
+  height: 200px;
+  background-color: #ffffff;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#cont3>a>img{
+  width: 175px;
+}
+
+/* 컨텐츠 끝 */
+
+/* 푸터 시작 */
+
+#footer{
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+}
+
+#f_cont{
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+#copyright{
+  width: 1000px;
+  height: 100px;
+  background-color: #ffffff;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+}
+
+#f_right{
+  width: 200px;
+  height: 100px;
+  float: left;
+}
+
+
+#sns{
+  width: 200px;
+  height: 50px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#sns>a{
+  margin: 0 2px 0;
+}
+
+#sns>a>img{
+  width: 50px;
+  height: 50px;
+}
+
+#family{
+  width: 200px;
+  height: 50px;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 46px;
+}
+
+#family>#site_box{
+  width: 170px;
+  height: 40px;
+}
+/* 푸터 끝 */
