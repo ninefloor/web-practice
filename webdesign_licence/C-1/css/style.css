@@ -1,0 +1,315 @@
+@charset utf-8;
+
+/*기본 속성 시작*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*기본 속성 끝*/
+
+/*워랩, 팝업 시작*/
+
+#wrap {
+  width: 1000px;
+  height: 650px;
+  background-color: #ffffff;
+}
+
+#popup {
+  width: 400px;
+  height: 400px;
+  background-color: #ffffff;
+  border: 3px #F6B62C solid;
+  position: fixed;
+  left: 20%;
+  top: 5%;
+  z-index: 10;
+  padding: 20px;
+  display: none;
+}
+
+#popup > h3 {
+  margin: 10px 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+#popup > p {
+  margin: 30px 10px;
+  font-size: 18px;
+}
+
+#popup > button {
+  width: 350px;
+  height: 60px;
+  margin-top: 10px;
+  background-color: #042469;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+}
+
+/*워랩, 팝업 끝*/
+
+/*사이드바 시작*/
+
+#sidebar {
+  width: 200px;
+  height: 650px;
+  background-color: #ffffff;
+  float: left;
+}
+
+#sidebar > #logo {
+  width: 200px;
+  height: 100px;
+  background-color: #ffffff;
+  padding: 30px 0;
+}
+
+#logo > img {
+  width: 200px;
+}
+
+#sidebar > #nav {
+  width: 200px;
+  height: 550px;
+  background-color: #ffffff;
+}
+
+#nav > .gnb {
+  margin: 20px 20px 0;
+}
+
+.gnb > li > a {
+  display: block;
+  width: 160px;
+  height: 50px;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.gnb > li > a:hover {
+  background-color: #042469;
+  color: #ffffff;
+}
+
+.lnb {
+  display: none;
+}
+
+.lnb > li > a {
+  display: block;
+  width: 160px;
+  height: 40px;
+  background-color: #F6B62C;
+  color: #333333;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.lnb > li > a:hover {
+  background-color: #042469;
+  color: #ffffff;
+}
+
+
+
+/*사이드바 끝*/
+
+/*컨텐츠 시작*/
+
+#contents {
+  width: 800px;
+  height: 650px;
+  background-color: #ffffff;
+  float: left;
+}
+
+#contents > #slide {
+  width: 800px;
+  height: 350px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+#slide > .slide_box {
+  position: relative;
+}
+
+#slide > .slide_box > img {
+  position: absolute;
+}
+
+#contents > #cont_box {
+  width: 800px;
+  height: 200px;
+  background-color: #ffffff;
+}
+
+#cont_box > #cont1 {
+  width: 300px;
+  height: 200px;
+  background-color: #ffffff;
+  float: left;
+}
+
+#cont1 > .tab_menu {
+  width: 280px;
+  height: 30px;
+  margin: 10px 10px 0;
+}
+
+.tab_menu > a {
+  display: block;
+  width: 100px;
+  height: 30px;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  float: left;
+}
+
+.tab_menu > .active {
+  background-color: #eeeeee;
+}
+
+#cont1 > .tab_cont {
+  width: 280px;
+  height: 150px;
+  background-color: #eeeeee;
+  margin: 0 10px 10px;
+  padding: 5px;
+}
+
+.tab_cont > div > .notice > li {
+  margin-top: 10px;
+}
+
+.tab_cont > div > .notice > li > a > span {
+  font-size: 14px;
+}
+
+.tab_cont > div > .notice > li > a > span:nth-child(2) {
+  font-size: 12px;
+  float: right;
+  position: relative;
+  top: 3px;
+}
+
+.gallary > li {
+  float: left;
+  margin: 30px 5px;
+}
+
+.gallary > li > a > img {
+  width: 80px;
+}
+
+#cont_box > #cont2 {
+  width: 250px;
+  height: 200px;
+  background-color: #ffffff;
+  float: left;
+  padding: 50px 10px 0;
+}
+
+#cont2 img {
+  width: 230px;
+}
+
+#cont_box > #cont3 {
+  width: 250px;
+  height: 200px;
+  background-color: #ffffff;
+  float: left;
+  padding: 50px 10px 0;
+}
+
+#cont3 img {
+  width: 230px;
+}
+
+
+#contents > #footer {
+  width: 800px;
+  height: 100px;
+  background-color: #ffffff;
+}
+
+#footer > #f_logo {
+  width: 200px;
+  height: 100px;
+  background-color: #ffffff;
+  float: left;
+  padding: 30px 0;
+}
+
+#f_logo > img {
+  width: 200px;
+}
+
+#footer > #f_contain {
+  width: 600px;
+  height: 100px;
+  background-color: #ffffff;
+  float: left;
+}
+
+#f_contain > .f_nav {
+  width: 600px;
+  height: 50px;
+  background-color: #ffffff;
+  padding: 15px 100px;
+}
+
+.f_nav > ul > li {
+  float: left;
+  padding-left: 30px;
+}
+
+.f_nav > ul > li::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  background-color: #333333;
+  margin-left: 30px;
+  position: relative;
+  top: 2px;
+}
+
+.f_nav > ul > li:nth-child(3)::after {
+  display: none;
+}
+
+#f_contain > .copyright {
+  width: 600px;
+  height: 50px;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+}
+
+/*컨텐츠 끝*/

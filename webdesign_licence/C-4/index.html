@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <script src="./js/jquery-1.12.3.js"></script>
+  <script src="./js/app.js"></script>
+  <title>Vallery Festival</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="pop_back">
+      <div id="popup">
+        <h3>Vallery Festival 공지사항</h3>
+        <p>
+          동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세. 무궁화 삼천리 화려강 대한 사람 대한으로 길이 보전하세.
+        </p>
+        <p>
+          남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세. 무궁화 삼천리 화려강 대한 사람 대한으로 길이 보전하세.
+        </p>
+        <button onclick="popup();">닫기</button>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div id="logo">
+        <a href="#"><img src="./images/logo.png" alt="로고"></a>
+      </div>
+      <nav id="nav">
+        <ul class="gnb">
+          <li>
+            <a href="#">축제소개</a>
+            <ul class="lnb">
+              <li><a href="#">Festival 소개</a></li>
+              <li><a href="#">행사장 안내</a></li>
+              <li><a href="#">조직위원회</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">예약안내</a>
+            <ul class="lnb">
+              <li><a href="#">예약하기</a></li>
+              <li><a href="#">예약확인/취소</a></li>
+              <li><a href="#">단체예약문의</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">아티스트</a>
+            <ul class="lnb">
+              <li><a href="#">고릴라즈</a></li>
+              <li><a href="#">메이저 레이저</a></li>
+              <li><a href="#">아우스게인</a></li>
+              <li><a href="#">타임로드</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">커뮤니티</a>
+            <ul class="lnb">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">사진갤러리</a></li>
+              <li><a href="#">영상갤러리</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="contents">
+      <div id="slide">
+        <div class="slide_box">
+          <a href="#"><img src="./images/slide1.jpg" alt="슬라이드1"></a>
+          <a href="#"><img src="./images/slide2.jpg" alt="슬라이드2"></a>
+          <a href="#"><img src="./images/slide3.jpg" alt="슬라이드3"></a>
+        </div>
+      </div>
+      <div id="cont_box">
+        <div id="cont1">
+          <div class="notice">
+            <h3>공지사항</h3>
+            <ul class="notice_list">
+              <li><a href="#" onclick="popup();"><span>Vallery Festival 공지사항1</span><span>2020.11.28</span></a></li>
+              <li><a href="#"><span>Vallery Festival 공지사항2</span><span>2020.11.28</span></a></li>
+              <li><a href="#"><span>Vallery Festival 공지사항3</span><span>2020.11.28</span></a></li>
+              <li><a href="#"><span>Vallery Festival 공지사항4</span><span>2020.11.28</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="cont2">
+          <div class="gallary">
+            <h3>갤러리</h3>
+            <ul class="gallary_list">
+              <li><a href="#"><img src="./images/gallary1.jpg" alt="갤러리1"></a></li>
+              <li><a href="#"><img src="./images/gallary2.jpg" alt="갤러리2"></a></li>
+              <li><a href="#"><img src="./images/gallary3.jpg" alt="갤러리3"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="cont3">
+          <div id="shortcut">
+            <a href="#"><img src="./images/direct.jpg" alt="바로가기"></a>
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+        <div id="f_logo">
+          <a href="#"><img src="./images/f_logo.png" alt="하단로고"></a>
+        </div>
+        <div id="copyright">
+          <address>COPYRIGHT &copy; by WEBDESIGN. ALL RIGHTS RESERVED</address>
+        </div>
+        <div id="family">
+          <select name="site" id="site">
+            <option value="#">패밀리사이트</option>
+            <option value="#">site1</option>
+            <option value="#">site2</option>
+            <option value="#">site3</option>
+          </select>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body></html>
