@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Vallery Festival</title>
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/app.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="popup">
+      <section>
+        <h3>RED Vallery Festival</h3>
+        <img src="./images/popup_img.png" alt="팝업이미지">
+        <p>날짜 : 8월 13~15일<br>
+          참가비용 : 30000원</p>
+        <button onclick="popup();">닫기</button>
+      </section>
+    </div>
+    <aside>
+      <div id="logo">
+        <a href="#"><img src="./images/logo1.jpg" alt="로고"></a>
+      </div>
+      <nav>
+        <ul class="gnb">
+          <li>
+            <a href="#">축제소개</a>
+            <ul class="lnb">
+              <li><a href="#">Festival 소개</a></li>
+              <li><a href="#">행사장 안내</a></li>
+              <li><a href="#">조직위원회</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">예약안내</a>
+            <ul class="lnb">
+              <li><a href="#">예약하기</a></li>
+              <li><a href="#">예약확인/취소</a></li>
+              <li><a href="#">단체예약문의</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">아티스트</a>
+            <ul class="lnb">
+              <li><a href="#">고릴라즈</a></li>
+              <li><a href="#">메이저 레이저</a></li>
+              <li><a href="#">아우스게인</a></li>
+              <li><a href="#">타임로드</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">커뮤니티</a>
+            <ul class="lnb">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">사진갤러리</a></li>
+              <li><a href="#">영상갤러리</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div id="contents">
+      <div id="slide">
+        <div class="slide_box">
+          <a href="#"><img src="./images/slide1.jpg" alt="공식이미지"></a>
+          <a href="#"><img src="./images/slide2.jpg" alt="축제전경"></a>
+          <a href="#"><img src="./images/slide3.jpg" alt="공연전경"></a>
+        </div>
+      </div>
+      <section id="notice">
+        <div>
+          <h3>공지사항</h3>
+          <ul class="notice_list">
+            <li><a href="#" onclick="popup();"><span>Rock Festival 공연팀 소개</span><span>2021-03-01</span></a></li>
+            <li><a href="#"><span>Rock Festival 매점 안내</span><span>2021-03-02</span></a></li>
+            <li><a href="#"><span>경품 추첨 안내</span><span>2021-03-03</span></a></li>
+            <li><a href="#"><span>너의 끼를 보여줘! 행사 안내</span><span>2021-03-04</span></a></li>
+            <li><a href="#"><span>거리 정화 운동 안내</span><span>2021-03-05</span></a></li>
+          </ul>
+        </div>
+      </section>
+      <section id="gallary">
+        <div>
+          <h3>갤러리</h3>
+          <ul class="gallary_list">
+            <li><a href="#"><img src="./images/gallery1.jpg" alt="공연사진1"></a></li>
+            <li><a href="#"><img src="./images/gallery2.jpg" alt="공연사진2"></a></li>
+            <li><a href="#"><img src="./images/gallery3.jpg" alt="리턴투밸리락"></a></li>
+          </ul>
+        </div>
+      </section>
+      <div id="shortcut">
+        <a href="#"><img src="./images/road.png" alt="바로가기"></a>
+      </div>
+      <footer>
+        <div id="f_logo">
+          <a href="#"><img src="./images/logo2.jpg" alt="하단로고"></a>
+        </div>
+        <div id="copyright">
+          <address>
+            (사)부산문화관광축제조직위원회 <br>
+            47500 부산광역시 연제구 월드컵대로 344(거제동 1299) 아시아드주경기장 <br>
+            대표전화 : 051-501-6051
+          </address>
+        </div>
+        <div id="family">
+          <select name="site" id="site">
+            <option value="#">패밀리사이트</option>
+            <option value="#">부산광역시</option>
+            <option value="#">문화체육관광부</option>
+            <option value="#">대한가수협회</option>
+            <option value="#">대한실용음악학원</option>
+          </select>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body></html>

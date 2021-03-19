@@ -1,0 +1,317 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #222328;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*워랩, 컨텐츠, 팝업*/
+
+#wrap {
+  width: 1000px;
+  height: 650px;
+  position: relative;
+}
+
+#contents {
+  width: 800px;
+  height: 650px;
+  float: left;
+}
+
+#popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: none;
+}
+
+#popup > section {
+  width: 500px;
+  height: 450px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  padding: 20px;
+  border: 3px solid #8b00fd;
+  text-align: center;
+}
+
+#popup > section > h3 {
+  margin: 0 10px 10px;
+  padding: 0 0 5px;
+  font-size: 24px;
+  border-bottom: 3px solid #8b00fd;
+}
+
+#popup > section > img {
+  width: 400px;
+  margin: 5px 0;
+}
+
+#popup > section > p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#popup > section > button {
+  width: 400px;
+  height: 50px;
+  background-color: #8b00fd;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+
+/*워랩, 컨텐츠, 팝업 끝*/
+
+/*어사이드*/
+
+aside {
+  width: 200px;
+  height: 650px;
+  float: left;
+  background-color: #7F03FF;
+  position: relative;
+  z-index: 5;
+}
+
+#logo {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+nav {
+  width: 200px;
+  height: 450px;
+  padding: 10px;
+}
+
+.gnb > li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.gnb > li > a {
+  display: block;
+  width: 180px;
+  height: 40px;
+  background-color: #7F03FF;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.gnb > li > a:hover {
+  background-color: #F800C9;
+}
+
+.lnb {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 180px;
+}
+
+.lnb > li > a {
+  display: block;
+  width: 180px;
+  height: 40px;
+  background-color: #7F03FF;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.lnb > li > a:hover {
+  background-color: #F800C9;
+}
+
+
+
+/*어사이드 끝*/
+
+/*슬라이드*/
+
+#slide {
+  width: 800px;
+  height: 350px;
+  position: relative;
+  background-color: #aaa;
+  overflow: hidden;
+}
+
+.slide_box {
+  width: 2400px;
+  height: 350px;
+  position: absolute;
+}
+
+.slide_box > a {
+  float: left;
+}
+
+/*슬라이드 끝*/
+
+/*섹션*/
+
+#notice {
+  width: 300px;
+  height: 200px;
+  background-color: #ECD6FF;
+  float: left;
+}
+
+#notice > div {
+  width: 280px;
+  height: 180px;
+  margin: 10px;
+  padding: 10px 5px;
+  background-color: #ffffff;
+}
+
+#notice > div > h3 {
+  border-bottom: 1px solid #ECD6FF;
+  font-size: 20px;
+  padding: 0px 5px 5px;
+}
+
+.notice_list {
+  margin: 5px;
+}
+
+.notice_list > li {
+  margin-bottom: 3px;
+}
+
+.notice_list > li > a > span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.notice_list > li > a > span:nth-child(2) {
+  font-weight: normal;
+  float: right;
+}
+
+#gallary {
+  width: 300px;
+  height: 200px;
+  background-color: #FA2DD4;
+  float: left;
+}
+
+#gallary > div {
+  width: 280px;
+  height: 180px;
+  margin: 10px;
+  padding: 10px 5px;
+  background-color: #ffffff;
+}
+
+#gallary > div > h3 {
+  border-bottom: 1px solid #FA2DD4;
+  font-size: 20px;
+  padding: 0px 5px 5px;
+}
+
+.gallary_list {
+  margin: 17px 0px;
+}
+
+.gallary_list > li {
+  float: left;
+  margin: 5px;
+}
+
+.gallary_list > li > a > img {
+  width: 80px;
+}
+
+#shortcut {
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  float: left;
+  text-align: center;
+  line-height: 335px;
+}
+
+#shortcut > a > img {
+  width: 150px;
+}
+
+/*섹션 끝*/
+
+/*푸터*/
+
+footer {
+  width: 800px;
+  height: 100px;
+  background-color: #7E7E7E;
+  clear: both;
+}
+
+#f_logo {
+  width: 200px;
+  height: 100px;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+}
+
+#f_logo > a > img {
+  height: 100px;
+}
+
+#copyright {
+  width: 400px;
+  height: 100px;
+  float: left;
+  text-align: center;
+}
+
+#copyright > address {
+  margin-top: 24px;
+  font-size: 11px;
+  color: #ffffff;
+}
+
+#family {
+  width: 200px;
+  height: 100px;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+}
+
+#family > #site {
+  width: 160px;
+  height: 40px;
+  border: none;
+}
+
+/*푸터 끝*/
