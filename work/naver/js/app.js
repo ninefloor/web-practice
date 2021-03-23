@@ -1,6 +1,7 @@
 $(document).ready(function(){
   if($.cookie("auto")=="true"){
     $("#login_chk").prop("checked",true);
+    $("#login_check>label>span").addClass("auto_on");
   }
   $("#ip_chk").prop("checked",true);
   ipFunc();
