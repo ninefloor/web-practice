@@ -1,0 +1,332 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333333;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 레이아웃 */
+
+#wrap {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  z-index: 10;
+}
+
+#slide {
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+#contents {
+  width: 1200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+#footer {
+  width: 100%;
+  height: 100px;
+  background-color: #777777;
+}
+
+/* 팝업 */
+
+#pop_bg {
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+#popup {
+  width: 500px;
+  height: 450px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  border: 5px solid #7b3100;
+  padding: 10px;
+}
+
+#popup > h2 {
+  text-align: center;
+  margin: 10px auto;
+}
+
+#popup > p {
+  padding: 10px;
+  font-size: 14px;
+}
+
+#popup > p:nth-child(3) {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+#popup > p:nth-child(4) {
+  color: #999;
+}
+
+#popup > p:nth-child(5) {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 8px;
+}
+
+#popup > button {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 490px;
+  height: 70px;
+  background-color: #7b3100;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+/* 헤더 */
+
+.logo {
+  width: 200px;
+  height: 100px;
+  float: left;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 180px;
+}
+
+.logo > a > img {
+  width: 180px;
+}
+
+.nav {
+  width: 1000px;
+  height: 100px;
+  float: left;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.gnb {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  overflow: hidden;
+}
+
+.gnb > li {
+  float: left;
+}
+
+.gnb > li > a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  background-color: #7b3100;
+  color: #ffffff;
+}
+
+.lnb {
+  display: none;
+}
+
+.lnb > li > a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  background-color: #7b3100;
+  color: #ffffff;
+}
+
+.nav a:hover {
+  background-color: #ffebde;
+  color: #7b3100;
+}
+
+/* 슬라이드 */
+
+.slidebox {
+  position: absolute;
+  top: 0;
+}
+
+.slidebox > li {
+  height: 300px;
+}
+
+/* 컨텐츠1 */
+
+.cont1 {
+  width: 450px;
+  height: 200px;
+  float: left;
+  padding: 10px;
+}
+
+.title {
+  width: 430px;
+  font-size: 20px;
+  margin: 5px 0 10px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #7b3100;
+  color: #7b3100;
+}
+
+.notice_list {
+  overflow: hidden;
+  padding: 5px;
+}
+
+.notice_list > li {
+  position: relative;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.notice_list > li > a > span:first-child {
+  font-weight: bold;
+}
+
+.notice_list > li > a > span:last-child {
+  position: absolute;
+  right: 0;
+}
+
+/* 컨텐츠2 */
+
+.cont2 {
+  width: 450px;
+  height: 200px;
+  float: left;
+  padding: 10px;
+}
+
+.gallery_list {
+  overflow: hidden;
+  padding: 5px;
+}
+
+.gallery_list > li {
+  float: left;
+  margin-left: 15px;
+}
+
+.gallery_list > li > a:hover img {
+  opacity: 0.7;
+}
+
+.gallery_list > li > a > img {
+  width: 120px;
+  border-radius: 10px;
+  transition: opacity 0.4s ease;
+}
+
+/* 컨텐츠3 */
+
+.cont3 {
+  width: 300px;
+  height: 200px;
+  float: left;
+  background-color: #ffffff;
+}
+
+/* 푸터 */
+
+.f_logo {
+  width: 200px;
+  height: 100px;
+  float: left;
+  text-align: center;
+  line-height: 180px;
+}
+
+.f_logo > a > img {
+  width: 180px;
+}
+
+.copyright {
+  width: 800px;
+  height: 100px;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+}
+
+.copyright > address {
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.sns {
+  width: 200px;
+  height: 100px;
+  float: left;
+  padding-top: 25px;
+  padding-left: 10px;
+}
+
+.sns > ul {
+  overflow: hidden;
+}
+
+.sns > ul > li {
+  float: left;
+  margin-right: 15px;
+}
+
+.sns > ul > li:last-child {
+  margin: 0;
+}
+
+.sns > ul > li > a > img {
+  width: 50px;
+}
