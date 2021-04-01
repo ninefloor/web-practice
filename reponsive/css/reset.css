@@ -78,6 +78,16 @@ h6 {
   font-weight: normal;
 }
 
+/* 반응형 이미지 */
+img{width: 100%;}
+
+/* 버튼 초기화 */
+
+button{
+  border: 0;
+  background: none;
+}
+
 /* IR 효과 */
 .ir_pm {
   display: block;
