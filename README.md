@@ -14,4 +14,4 @@
 
 ## 연습
 
-[반응형 웹페이지](https://ninefloor.github.io/web-practice/reponsive/)
+[반응형 웹페이지 (from webstoryboy)](https://ninefloor.github.io/web-practice/reponsive/)
