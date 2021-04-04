@@ -79,13 +79,28 @@ h6 {
 }
 
 /* 반응형 이미지 */
-img{width: 100%;}
+img, video{width: 100%;}
 
 /* 버튼 초기화 */
 
 button{
   border: 0;
   background: none;
+}
+
+/* clearfix */
+.clearfix{
+  *zoom: 1;
+}
+
+.clearfix::before, .clearfix::after{
+  display: block;
+  content: '';
+  line-height: 0;
+}
+
+.clearfix::after{
+  clear: both;
 }
 
 /* IR 효과 */
