@@ -787,6 +787,53 @@ only screen and (min-resolution: 3dppx) {
   padding: 3px 10px;
 }
 
+/* 사이드 이펙트 3 */
+.side3{
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+.side3:hover figcaption{
+  transform: translate(-50%, -50%) rotateY(0deg);
+  opacity: 1;
+}
+.side3 figcaption {
+  position: absolute; top: 50%; left: 50%;
+  color: #fff;
+  opacity: 0;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  transform: translate(350%, -50%) rotate(180deg);
+}
+
+.side3 img{
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.side3:hover img{
+  opacity: 0.4;
+}
+
+.side3 figcaption h3{
+  font-size: 16px;
+}
+
+.side3 figcaption em{
+  display: block; font-weight: bold;
+}
+
+.side3 figcaption::after{
+  content: '';
+  width: 100px; height: 100px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%; top: 50%; z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
 /* 미디어 쿼리 */
 
 /* 데스크탑 */
